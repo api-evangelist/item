@@ -1,7 +1,24 @@
 aid: item
 name: Item
-description: Item is a company surfaced as a portfolio company of y-combinator and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Item is an AI-native customer relationship management (CRM) platform, part of
+  Y Combinator's Fall 2025 batch. It replaces the traditional CRM with an AI Assistant that
+  handles daily work in plain language and customizable Agents that autonomously execute
+  business processes across sales, support, and account management. Item connects to 100+
+  customer tools, gathers and enriches context automatically, discovers leads that match an
+  ideal customer profile, and becomes a company's single source of truth for people,
+  companies, and deals.
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://amount-ice-79009593.figma.site/_assets/v11/62be4cb32de20247f21a11220e02ac7e234a4dd6.png
 url: https://raw.githubusercontent.com/api-evangelist/item/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,14 +26,41 @@ x-backed-by:
 - y-combinator
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-yc-batch: Fall 2025
+x-website: https://item.app
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- CRM
+- Customer Relationship Management
+- Artificial Intelligence
+- AI Agents
+- Sales
+- Customer Support
+- Y Combinator
 apis: []
+common:
+- type: DomainSecurity
+  url: security/item-domain-security.yml
+- type: Website
+  url: https://item.app
+- type: Login
+  url: https://app.useitem.io
+- type: SignUp
+  url: https://app.useitem.io/survey/d261ae07-0f53-4a6a-85fe-85c63a8fbd0c
+- type: TermsOfService
+  url: https://item.app/terms
+- type: PrivacyPolicy
+  url: https://item.app/privacy
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
