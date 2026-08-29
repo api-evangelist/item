@@ -7,6 +7,17 @@ description: Item is an AI-native customer relationship management (CRM) platfor
   customer tools, gathers and enriches context automatically, discovers leads that match an
   ideal customer profile, and becomes a company's single source of truth for people,
   companies, and deals.
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: unknown
   onboarding: unknown
