@@ -1,0 +1,19 @@
+# DERIVED by build-integration-preconfigs.py (roadmap#949). Overlay on the PARTNER's contract:
+# where lightspeed-pos's enum names item, and what that value is.
+overlay: 1.0.0
+info:
+  title: item as a processor-connection in lightspeed-pos's contract
+  version: 1.0.0
+extends: https://raw.githubusercontent.com/api-evangelist/lightspeed-pos/refs/heads/main/openapi/lightspeed-pos-order-and-pay-webhook-api-openapi.yml
+actions:
+- target: $.components.schemas.apeEventResource.properties.resource
+  update:
+    x-apievangelist-integration:
+      values:
+        item:
+          provider: item
+          relationship: processor-connection
+          evidence: https://github.com/api-evangelist/lightspeed-pos/blob/main/openapi/lightspeed-pos-order-and-pay-webhook-api-openapi.yml
+      method: derived
+      generated: '2026-10-12'
+      generator: build-integration-preconfigs.py

@@ -1,0 +1,46 @@
+generated: '2026-10-12'
+method: searched
+source:
+- https://zapier.com/apps/item/integrations
+- https://n8n.io/integrations/item/
+- https://composio.dev/toolkits/item
+- https://monid.ai/tools/item
+checked:
+- https://composio.dev/toolkits/item
+- https://monid.ai/tools/item
+- https://n8n.io/integrations/item/
+- https://zapier.com/apps/item/integrations
+summary: null
+marketplace_apps: []
+edges:
+- partner_name: lightspeed
+  partner: lightspeed
+  partner_match: domain
+  type: contract
+  channel: partner-built
+  relationship: processor-connection
+  direction: partner-built
+  evidence: https://github.com/api-evangelist/lightspeed/blob/main/openapi/lightspeed-k-series-openapi.yml
+  contract_reference:
+    repo: lightspeed
+    spec_file: lightspeed-k-series-openapi.yml
+    value: item
+    property: schemas.apeEventResource.resource
+    detected_by: detect-payment-method-edges.py
+    detected: '2026-10-12'
+- partner_name: lightspeed-pos
+  partner: lightspeed-pos
+  partner_match: domain
+  type: contract
+  channel: partner-built
+  relationship: processor-connection
+  direction: partner-built
+  evidence: https://github.com/api-evangelist/lightspeed-pos/blob/main/openapi/lightspeed-pos-order-and-pay-webhook-api-openapi.yml
+  contract_reference:
+    repo: lightspeed-pos
+    spec_file: lightspeed-pos-order-and-pay-webhook-api-openapi.yml
+    value: item
+    property: schemas.apeEventResource.resource
+    detected_by: detect-payment-method-edges.py
+    detected: '2026-10-12'
+templates: []
